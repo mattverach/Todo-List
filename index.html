@@ -14,25 +14,26 @@
 <body>
     
 <header>
-    <h1>To do - Lista de Tareas</h1>
+    <h1 class="silent-title">To DO , lista de tareas</h1>
+    <h1>Agrega tu tarea.</h1>
 </header>
 <form>
-    <input type="text" class="todo-input">
+    <input type="text" class="todo-input" placeholder="Escribe tu tarea">
     <button class="todo-button" type="submit">
         <i class="fas fa-plus-square"></i>
     </button>
     <div class="select">
         <select name="todos" class="filter-todo">
-            <option value="all">All</option>
-            <option value="completed">Completed</option>
-            <option value="uncompleted">Uncompleted</option>
+            <option value="all">Todos</option>
+            <option value="completed">Hechos</option>
+            <option value="uncompleted">Pendientes</option>
         </select>
     </div>
 </form>
+<h2>Lista de tareas</h2>
 <div class="todo-container">
     <ul class="todo-list"></ul>
 </div>
-
     <script src="./app.js"></script>
 </body>
 </html>

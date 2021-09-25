@@ -9,15 +9,26 @@ body{
     color: white;
     font-family: 'Yaldevi', sans-serif;
     min-height: 100vh;
+    
 }
 
 header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     font-weight: 200;
     font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+
 }
 
-header,form{
-    min-height: 20vh;
+.silent-title{
+    display: none;
+}
+
+form{
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +56,15 @@ form button{
 form button:hover{
     color:  white;
     background: rgb(173, 173, 173);
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 .todo-container {
@@ -133,10 +153,12 @@ select{
 }
 
 select{
+    
     color: black;
     width: 10rem;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1.23rem;
+    transition:all 0.3s ease ;
 }
 
 .select::after {
