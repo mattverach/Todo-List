@@ -61,6 +61,7 @@ function deleteCheck(e){
     }
 }
 
+//FILTRO
 function filterTodo(e){
     const todos = todoList.childNodes;
     todos.forEach(function(todo){
